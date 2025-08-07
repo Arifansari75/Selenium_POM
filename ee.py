@@ -1,6 +1,9 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
+"""This code will just open google and print list of all languages
+that google offer."""
+
 driver = webdriver.Chrome()
 print("dd",driver)
 driver.get("https://google.com")
