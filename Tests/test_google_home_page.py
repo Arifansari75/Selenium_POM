@@ -23,5 +23,10 @@ class GoogleHomeTest(slash.Test):
         list_of_language = self.googleHomePage.list_of_all_languages()
         print(len(list_of_language),list_of_language)
 
+    def test_test2(self):
+        self.googleHomePage.google_search_with_text("Python W3 School")
+
+
+
     def test_test3(self):
         assert 2+5 == 7
