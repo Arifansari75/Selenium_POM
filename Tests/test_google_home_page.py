@@ -12,10 +12,10 @@ class GoogleHomeTest(slash.Test):
     def before(self,Driver):
         print("Inside before")
         self.googleHomePage = GoogleHomePage(Driver)
-        self.googleHomePage.load_url()
         print("outside before")
 
     def test_test1(self):
+        self.googleHomePage.load_url()
         list_of_google_apps = self.googleHomePage.list_of_all_google_apps()
         print(len(list_of_google_apps))
         print("Inside test1",list_of_google_apps)
@@ -26,3 +26,7 @@ class GoogleHomeTest(slash.Test):
     def test_test2(self):
         self.googleHomePage.google_search_with_text("Python W3 School")
 
+
+
+    def test_test3(self):
+        assert 2+5 == 7
